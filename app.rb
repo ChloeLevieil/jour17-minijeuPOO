@@ -18,7 +18,15 @@ puts "--------------- F I G H T ---------------"
 
 puts player1.attacks(player2)
 puts player2.attacks(player1)
-
+    if player2.points <= 0
+        puts "#{player2.name} LOOOOOOOSER !"
+        break
+    end
+    puts ""
+    if player1.points <= 0
+        puts "#{player1.name} LOOOOOOOSER !"
+        break
+    end
 end
 
 #binding.pry
